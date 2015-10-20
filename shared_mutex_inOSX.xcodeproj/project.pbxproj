@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2E8AA0B1BD6728D003FE4C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2E8AA0A1BD6728D003FE4C5 /* main.cpp */; };
+		A2E8AA131BD6731A003FE4C5 /* shared_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2E8AA121BD6731A003FE4C5 /* shared_mutex.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		A2E8AA071BD6728D003FE4C5 /* shared_mutex_inOSX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shared_mutex_inOSX; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E8AA0A1BD6728D003FE4C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A2E8AA111BD6731A003FE4C5 /* shared_mutex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shared_mutex; sourceTree = "<group>"; };
+		A2E8AA121BD6731A003FE4C5 /* shared_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shared_mutex.cpp; sourceTree = "<group>"; };
+		A2E8AA141BD67340003FE4C5 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		A2E8AA151BD67440003FE4C5 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 		A2E8A9FE1BD6728D003FE4C5 = {
 			isa = PBXGroup;
 			children = (
+				A2E8AA151BD67440003FE4C5 /* libc++abi.tbd */,
 				A2E8AA091BD6728D003FE4C5 /* shared_mutex_inOSX */,
 				A2E8AA081BD6728D003FE4C5 /* Products */,
 			);
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A2E8AA0A1BD6728D003FE4C5 /* main.cpp */,
+				A2E8AA111BD6731A003FE4C5 /* shared_mutex */,
+				A2E8AA121BD6731A003FE4C5 /* shared_mutex.cpp */,
+				A2E8AA141BD67340003FE4C5 /* LICENSE.TXT */,
 			);
 			path = shared_mutex_inOSX;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E8AA131BD6731A003FE4C5 /* shared_mutex.cpp in Sources */,
 				A2E8AA0B1BD6728D003FE4C5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +139,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -172,7 +182,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
